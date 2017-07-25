@@ -11,4 +11,15 @@ Park.prototype.remove = function(dinosaurType) {
     this.population.splice(dinoToRemove, 1);
 };
 
+Park.prototype.findDinosaurWithHighAnnualOffspring = function(maxamount) {
+  var result = [];
+  for (dino of this.population) {
+    if (dino.annualOffspring > maxamount) {
+      result.push(dino);
+    }
+    return result;
+  }
+
+};
+
 module.exports = Park;
