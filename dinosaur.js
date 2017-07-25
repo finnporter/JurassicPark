@@ -1,6 +1,6 @@
-var Dinosaur = function(type, NumberOfOffspringPerYear) {
+var Dinosaur = function(type, annualOffspring) {
   this.type = type;
-  this.NumberOfOffspringPerYear = NumberOfOffspringPerYear;
+  this.annualOffspring = annualOffspring;
 };
 
 module.exports = Dinosaur;

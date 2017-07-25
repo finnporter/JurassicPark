@@ -10,7 +10,11 @@ describe("Dinosaur", function() {
   });
   
   it("dinosaur should have a name", function() {
-    assert.strictEqual(dinosaur.type, "Pterosauria")
+    assert.strictEqual(dinosaur.type, "Pterosauria");
+  });
+
+  it("dinosaur should have annual Offspring", function() {
+    assert.strictEqual(dinosaur.annualOffspring, 1);
   });
 
 });
